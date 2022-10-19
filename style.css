@@ -1,0 +1,460 @@
+/* ------Header --------
+-----------------------*/
+body{
+    margin:0;
+    margin-top: 2%;
+}
+
+header{
+    display:flex;
+    background-color: rgb(48, 45, 45);
+    margin:0;
+    
+    width: 1321px;
+    height: 646px;
+    margin-left: 83px;
+    background: #321a1a;
+    border-radius: 30px;
+}
+.header-info h1{
+    font-size: 50px;
+    color:white;
+    padding-top: 100px;
+    padding-left: 80px;
+    font-family: 'Public Sans', sans-serif;
+
+}
+.header-info p{
+    color: white;
+    padding-left: 80px;
+    font-family: 'Public Sans', sans-serif;
+}
+.header-info a{
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color:white;
+    margin-left: 80px;
+    font-family: 'Public Sans', sans-serif;
+}
+.header-img{
+    width:100%;
+    display: flex;
+    padding-right: 0;
+
+}
+  /*--------- animations ---------
+  ------------------------------*/
+.animation{
+    position: absolute;
+}
+header:hover{
+    background-color: black;
+}
+
+header:hover .animation{
+    transform: translate(100px, 560px) rotate(-60deg) scale(2);
+
+}
+header:hover .cr{
+    transform:  rotate(1deg);
+}
+
+ /*----------- main --------
+ ------------------------- */
+ article{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      margin: 75px 0 0 83px;
+ }
+ .menu{
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+    
+
+ }
+ .menu-item{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1%;
+    height: 60%;
+     gap:10%;
+    border-radius: 10px;
+    background-color: #161616;
+ }
+ .menu-item a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'Public Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+   min-width: 70%;
+    padding:15px 17px 15px 17px;
+  
+    border-radius: 8px;
+
+ }
+ .menu-item a:hover{
+    background-color: red;
+ }
+ .blogs{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 83%);
+    width: 95%;
+    padding-left: 12%;
+    
+    
+}
+.blog{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 100%;
+}
+.blog img{ 
+    width: 100%;
+    height: 155px;
+    border-radius: 10px;
+    min-width: 1%;
+    
+}
+.blog-info h4{
+    display: inline;
+   
+    padding: 3% 4px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1em;
+    color: black
+    
+}
+.blog-info p{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+}
+.blog-comment{
+    display: flex;
+    justify-content: space-evenly;  
+}
+.blog>input[type="button"]
+{
+    padding:2px 3px 2px 3px; 
+    background-color:white;
+     border-radius:5px
+}
+.blog>.blog-info:hover button{
+    background-color: slategray;
+}
+form{
+    margin: 5% 50% 5% 50%;
+    visibility: hidden;
+}
+form>input{
+    background-color: red;
+    border: 0;
+    color:whitesmoke ;
+    padding:15px 18px 15px 18px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+}
+/*----- Footer -------
+
+---------------------*/
+.footer{
+    background-color: #000000;
+    padding-bottom: 5%;
+    
+}
+.goal h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Satisfy', cursive;
+    color: rgb(249, 249, 249);
+    padding-top: 80px;
+    padding-bottom: 80px;  
+}
+.horizontal-line{
+    width: 80%;
+    color:tomato;
+}
+.term{
+    display: flex;
+    width: 80%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    justify-content: space-around;
+}
+.term a{
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+}
+.social-icon{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.social-icon a{
+    color: rgb(255, 255, 255);
+    margin: 0 4px;
+}
+.social-icon a:hover{
+    color: #ffffff;
+}
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    font-family: 'Satisfy', cursive;
+    color: rgb(255, 255, 255);
+}
+
+/* small mobile */
+
+@media only screen and (max-width:576px) {
+ 
+    body{
+        margin: 0;
+        margin-right: 10%;
+        
+    }
+    header{
+    margin-top: 10%;
+    display:flex;
+    margin-left: 0;
+    flex-direction: column;
+    background-color: rgb(48, 45, 45);
+    
+    width: auto;
+    height: 1%;
+    margin-left: 83px;
+    background: #321a1a;
+    border-radius: 30px;
+} 
+    .header-img{
+        display: flex;
+        flex-direction: column;
+       justify-content: space-evenly;
+       padding-right: 10%;
+       padding-top: 3%;
+    
+   
+}
+.header-info h1{
+    font-size: 50px;
+    color:white;
+    padding-top: 100px;
+    padding-left: 12%;
+    font-family: 'Public Sans', sans-serif;
+
+}
+.header-info p{
+    color: white;
+    padding-left: 10%;
+    font-family: 'Public Sans', sans-serif;
+}
+.header-info a{
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color:white;
+    margin-left: 33%;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+
+  /*--------- animations ---------
+  ------------------------------*/
+.animation{
+    position: absolute;
+}
+header:hover{
+    background-color: black;
+}
+
+header:hover .animation{
+    transform: translate(100px, 100px) rotate(-60deg) scale(2);
+
+}
+header:hover .cr{
+    transform:  rotate(1deg);
+}
+
+ /*----------- main --------
+ ------------------------- */
+ article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+ }
+
+ .menu-item{
+    
+     margin-top:0;
+     min-width: 5%;
+    background-color: white;
+    
+}
+.menu-item a{
+    min-width: 5%;
+    border: 2px solid gray;
+    margin-top: 10px;
+}
+.blogs{
+    display: grid;
+    margin-top: 100px;
+    gap: 40px;
+    grid-template-columns: repeat(1, 83%);
+    width: 95%;
+    padding-left: 12%;
+ 
+}
+.footer{
+    background-color: #000000;
+    width: fit-content;
+    justify-content: space-evenly;
+    padding: 0 45% 2% 50%;
+    overflow-x: hidden;
+    
+}
+.term{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+.term a{
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    justify-content: space-around;
+   
+   
+}
+}
+@media  screen and (min-width:578px) and (max-width:993px){
+    body{
+        margin: 0;
+        overflow-x: hidden;
+        
+        
+    }
+    header{
+    margin-top: 10%;
+    display: flex;
+    
+    
+    background-color: rgb(48, 45, 45);
+    
+    max-width: 700px;
+    height: auto;
+    margin-left: 83px;
+    background: #321a1a;
+    border-radius: 30px;
+} 
+    .cr{
+    position:relative;
+    width: 480px;
+
+       
+    
+   
+}
+.header-info h1{
+    font-size: 50px;
+    color:white;
+    padding-top: 100px;
+    padding-left: 12%;
+    width: 30%;
+    font-family: 'Public Sans', sans-serif;
+
+}
+.header-info p{
+    color: white;
+    padding-left: 10%;
+    width: 80%;
+    font-family: 'Public Sans', sans-serif;
+}
+.header-info a{
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color:white;
+   
+    position: relative;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+
+  /*--------- animations ---------
+  ------------------------------*/
+.animation{
+    position: absolute;
+}
+header:hover{
+    background-color: black;
+}
+
+header:hover .animation{
+    transform: translate(100px, 630px) rotate(-60deg) scale(2);
+
+}
+header:hover .cr{
+    transform:  rotate(1deg);
+} article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu-item{
+   flex-direction: row;
+   
+   margin-top:10%;
+  background-color: white;
+  
+}
+.menu-item a{
+  border: 2px solid gray;
+  
+  
+}
+.blogs{
+  margin-top:10%;
+  grid-template-columns: repeat(2,1fr);
+}
+form{
+    visibility: visible;
+}
+.footer{
+    width: 100%;
+    padding-right: 100%;
+    
+}
+}
+/* For another website  */
+.blog>.images{
+    display: flex;
+    width:100%;
+    height: auto;
+    
+}
+.blog>.images p{
+   
+    font-family: 'Public Sans', sans-serif;
+    color:red;
+    font-size: 43px;
+}
